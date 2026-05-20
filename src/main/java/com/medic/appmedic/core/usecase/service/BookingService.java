@@ -53,7 +53,7 @@ public class BookingService implements CreateBookingCase {
     }
 
 public List<String> getAvailableSlots(){
-    List<String> slots = ArrayList <> ();
+    List<String> slots = new ArrayList <> ();
 
         slots.add("08:00");
 
