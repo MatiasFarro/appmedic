@@ -9,6 +9,10 @@ import com.medic.appmedic.core.usecase.port.out.BookingRepositoryPort;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+
+import java.util.List;
+import java.util.ArrayList;
 
 
 public class BookingService implements CreateBookingCase {
@@ -47,4 +51,27 @@ public class BookingService implements CreateBookingCase {
                 saved.getUpdatedAt()
         );
     }
+
+public List<String> getAvailableSlots(){
+    List<String> slots = ArrayList <> ();
+
+        slots.add("08:00");
+
+        slots.add("09:00");
+
+        slots.add("10:00");
+
+        slots.add("11:00");
+
+        slots.add("12:00");
+
+        slots.add("14:00");
+
+        slots.add("16:00");
+
+
+    return slots;
+
+    
+}
 }
