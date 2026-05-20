@@ -9,4 +9,4 @@ public interface BookingRepositoryPort {
     Booking save(Booking booking);
 
     Optional<Booking> findById(UUID id);
-}
+};
